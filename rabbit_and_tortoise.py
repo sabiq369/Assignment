@@ -10,26 +10,17 @@ while i != 0:
         break
     
     elif system_generated_number != user_input:
-        for i in system_generated_number_to_list:
-            for j in user_input_to_list:
-                if i == j:
-                    print("You got tortoise")
-                break
-            for j in user_input_to_list:
-                if i==j:
+        for i in range(0,len(user_input_to_list)):  
+            if user_input_to_list[i] in system_generated_number_to_list:
+                if user_input_to_list[i] == system_generated_number_to_list[i]:
                     print("you got rabbit")
-                break
-                
-    
- 
+                  
 
-    
-        
-        
-        
-
+                else:
+                    print("you got tortoise")
                     
-     
-
-    
-        
+    user_input_iterating = input("do you want to continue : y for yes, n for no : ")
+    if user_input_iterating == "y":
+        continue
+    else:
+        break
