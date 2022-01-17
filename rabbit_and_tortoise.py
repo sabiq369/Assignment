@@ -8,14 +8,17 @@ while i != 0:
     if user_input == system_generated_number:
         print("You win")
         break
+    
     elif system_generated_number != user_input:
         for i in system_generated_number_to_list:
             for j in user_input_to_list:
                 if i == j:
                     print("You got tortoise")
-                    i == 0
-                    break
-        
+                break
+            for j in user_input_to_list:
+                if i==j:
+                    print("you got rabbit")
+                break
                 
     
  
